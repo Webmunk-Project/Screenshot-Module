@@ -4,6 +4,7 @@
     "js/worker.js"
   ], 
   "content_scripts": [
+    "js/html2canvas.js",
     "js/content.js"
   ], 
   "permissions": [
