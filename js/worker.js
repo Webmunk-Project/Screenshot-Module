@@ -1,5 +1,3 @@
-/* global registerCustomModule, registerMessageHandler */
-
 (function () {
   const recordScreenshot = function (request, sender, sendResponse) {
     if (request.content === 'take_screenshot') {
@@ -45,9 +43,9 @@
     return false
   }
 
-  registerCustomModule(function (config) {
+  self.registerCustomModule(function (config) {
     console.log('[Screenshot] Initialized.')
 
-    registerMessageHandler('take_screenshot', recordScreenshot)
+    self.registerMessageHandler('take_screenshot', recordScreenshot)
   })
 })()

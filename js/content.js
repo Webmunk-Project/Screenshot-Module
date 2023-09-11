@@ -1,4 +1,4 @@
-/* global chrome, locationFilterMatches, html2canvas */
+/* global locationFilterMatches, html2canvas */
 
 (function () {
   window.registerModuleCallback(function (config) {
